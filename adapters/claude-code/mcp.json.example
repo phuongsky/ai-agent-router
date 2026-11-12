@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ai-requirement-router": {
+      "command": "C:\\PATH\\TO\\PYTHON.EXE",
+      "args": [
+        "-m",
+        "requirement_router.server"
+      ]
+    }
+  }
+}

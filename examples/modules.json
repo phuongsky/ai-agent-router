@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "modules": [
+    {
+      "id": "students",
+      "name": "Students",
+      "file": "requirements/students/student-requirement.md",
+      "aliases": [
+        "học viên",
+        "hoc vien",
+        "student",
+        "students",
+        "danh sách học viên"
+      ]
+    },
+    {
+      "id": "teachers",
+      "name": "Teachers",
+      "file": "requirements/teachers/teacher-requirement.md",
+      "aliases": [
+        "giáo viên",
+        "giao vien",
+        "teacher",
+        "teachers",
+        "giảng viên"
+      ]
+    },
+    {
+      "id": "reports",
+      "name": "Reports",
+      "file": "requirements/reports/report-requirement.md",
+      "aliases": [
+        "báo cáo",
+        "bao cao",
+        "report",
+        "thống kê"
+      ]
+    },
+    {
+      "id": "general",
+      "name": "General",
+      "file": "requirements/general/general-requirement.md",
+      "aliases": [
+        "hệ thống",
+        "he thong",
+        "cấu hình chung"
+      ]
+    }
+  ]
+}

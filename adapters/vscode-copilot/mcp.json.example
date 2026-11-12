@@ -1,0 +1,12 @@
+{
+  "servers": {
+    "ai-requirement-router": {
+      "type": "stdio",
+      "command": "C:\\PATH\\TO\\PYTHON.EXE",
+      "args": [
+        "-m",
+        "requirement_router.server"
+      ]
+    }
+  }
+}
