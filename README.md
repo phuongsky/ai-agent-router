@@ -54,8 +54,8 @@ does not secretly call an LLM or send project data over the network.
 ## Install from source
 
 ```bash
-git clone https://github.com/YOUR-ORG/ai-requirement-router.git
-cd ai-requirement-router
+git clone https://github.com/phuongsky/ai-agent-router
+cd ai-agent-router
 python -m venv .venv
 ```
 
@@ -78,8 +78,11 @@ pip install -e ".[dev]"
 ## Register multiple projects
 
 ```powershell
-arr register --id hero-english-crm --name "Hero English CRM" --path "D:\Hero English Develop\CRM_app"
-arr register --id hero-chinese-crm --name "Hero Chinese CRM" --path "D:\Hero Chinese Develop\CRM_app"
+cd C:\YOUR_PATH\ai-agent-router
+.\.venv\Scripts\python.exe -m pip install -e .
+
+arr register --id project-1 --name "Project 1" --path "D:\project1"
+arr register --id project-2 --name "Project 2" --path "D:\project2"
 arr list
 ```
 
@@ -170,26 +173,6 @@ git commit -m "docs(requirements): capture new requirements"
 ```
 
 The router never commits or pushes automatically.
-
-
-## Publish as a public GitHub repository
-
-1. Create an empty **Public** repository on GitHub (do not initialize it with a README).
-2. From this extracted project directory run:
-
-```powershell
-git init
-git add .
-git commit -m "chore: initial AI Requirement Router Community Edition"
-git branch -M main
-git remote add origin https://github.com/YOUR-ORG/ai-requirement-router.git
-git push -u origin main
-```
-
-Replace `YOUR-ORG` and repository name with your GitHub details. Review the files and remove
-any organization-specific project paths or secrets before making the repository public.
-The repository intentionally contains no CRM source code, credentials, project-specific data,
-or user registry.
 
 ## Development
 
